@@ -28,4 +28,19 @@ Application performs below analysis and store the results for each analysis.
 
 1. Source_Code: This folder contains all the source codes required to run the spark application with the utilities package.
 2. Data.zip: Has sample input datasets
+3. execution.bat: This file helps to run the spark application after the repo is cloned.
+
+**REQUIREMENTS FOR THE APPLICATION**
+
+1. Java installation & environment variable setup "JAVA_HOME" (https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html)
+2. Spark installation &  environment variable setup "SPARK_HOME" (https://www.apache.org/dyn/closer.lua/spark/spark-3.2.3/spark-3.2.3-bin-hadoop2.7.tgz)
+3. Python3 installation & environment variable setup
+4. Winutils.exe download and should be placed in C-drive hadoop/bin folder. Also set environment variable "HADOOP_HOME" (https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe)
+
+**EXECUTION**
+1. Clone the repository
+2. In Command prompt, go to repo location i.e., "CarCrash_Case_study folder"
+3. Type execution.bat 
+
+NOTE:- execution.bat has all the commands required to run the spark application. In case of manual execution commands can be referred from here.
 
