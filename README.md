@@ -39,6 +39,11 @@ Application performs below analysis and store the results for each analysis.
   7.	Analysis 7: Count of Distinct Crash IDs where No Damaged Property was observed and Damage Level (VEH_DMAG_SCL~) is above 4 and car avails Insurance
   8.	Analysis 8: Determine the Top 5 Vehicle Makes where drivers are charged with speeding related offences, has licensed Drivers, used top 10 used vehicle colours and has car licensed with the Top 25 states with highest number of offences (to be deduced from the data)
 
+**OUTPUT**
+
+1. The output after every analysis is stored in the path provided in config.json.
+2. Logs about the Analysis are also stored in a file "car_crash.log" and is being appended every time it is executed. 
+
 **REQUIREMENTS FOR THE APPLICATION**
 
 1. Java installation & environment variable setup "JAVA_HOME" (https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html)
