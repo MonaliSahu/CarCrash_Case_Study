@@ -9,6 +9,9 @@ For the analysis 6 datasets are used. The Data dictionary for all the Datasets a
 
 ![image](https://user-images.githubusercontent.com/48520317/216545714-3792c13a-ec94-4d96-aabf-4e9342694ef2.png)
 
+![image](https://user-images.githubusercontent.com/48520317/216552293-f3f9c43d-d312-42fd-803c-76c637eb46d5.png)
+
+
 **ANALYTICS**
 
 Application performs below analysis and store the results for each analysis.
@@ -21,6 +24,8 @@ Application performs below analysis and store the results for each analysis.
   7.	Analysis 7: Count of Distinct Crash IDs where No Damaged Property was observed and Damage Level (VEH_DMAG_SCL~) is above 4 and car avails Insurance
   8.	Analysis 8: Determine the Top 5 Vehicle Makes where drivers are charged with speeding related offences, has licensed Drivers, used top 10 used vehicle colours and has car licensed with the Top 25 states with highest number of offences (to be deduced from the data)
   
+**PROJECT STRUCTURE**
 
-
+1. Source_Code: This folder contains all the source codes required to run the spark application with the utilities package.
+2. Data.zip: Has sample input datasets
 
