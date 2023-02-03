@@ -26,13 +26,18 @@ Application performs below analysis and store the results for each analysis.
   
 **PROJECT STRUCTURE**
 
-1. Source_Code: This folder contains all the source codes required to run the spark application with the utilities package.
-    a. main_module.py: The driver program of the application. Takes config.json as argument.
-    b. carCrashAnalysis.py: Defines the Analyzer class
-    c. config.json: Configuration file which can be modified as per requirement in order to provide input output locations & file formats.
-    d. utilities: Package that has all the helper and validation codes.
+1. sourceCodes: This package contains all the source codes required to run the spark application with the utilities package.
+    - carCrashAnalysis.py: Defines the Analyzer class
+    - utilities: Package that has all the helper and validation codes.
+      - utils.py: contains all the read & write helper functions
+      - configChecks.py: contains all config.json validation functions.
 2. Data.zip: Has sample input datasets
-3. execution.bat: This file helps to run the spark application after the repo is cloned.
+3. bootstrap.bat: This file helps to run the spark application after the repo is cloned.
+4. requirements.txt: Has the list of python packages required for the application
+5. main_module.py: The driver program of the application. Takes configuration/config.json as argument
+6. configuration: This folder contains the config.json file. This is a configuration file which can be modified as per requirement in order to provide input output locations & file formats.
+  - Format: json
+  - Keys: INPUT_FILE_PATHS (Mandatory), OUTPUT_FILE_PATHS (Optional), APP_NAME (Optional), OUTPUT_FILE_FORMAT (Optional)
 
 **REQUIREMENTS FOR THE APPLICATION**
 
@@ -44,7 +49,7 @@ Application performs below analysis and store the results for each analysis.
 **EXECUTION**
 1. Clone the repository
 2. In Command prompt, go to repo location i.e., "CarCrash_Case_study folder"
-3. Type execution.bat 
+3. Type bootstrap.bat 
 
-NOTE:- execution.bat has all the commands required to run the spark application. In case of manual execution, commands can be referred from here.
+NOTE:- bootstrap.bat has all the commands required to run the spark application. In case of manual execution, commands can be referred from here.
 
