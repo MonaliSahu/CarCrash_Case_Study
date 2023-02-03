@@ -46,5 +46,5 @@ Application performs below analysis and store the results for each analysis.
 2. In Command prompt, go to repo location i.e., "CarCrash_Case_study folder"
 3. Type execution.bat 
 
-NOTE:- execution.bat has all the commands required to run the spark application. In case of manual execution commands can be referred from here.
+NOTE:- execution.bat has all the commands required to run the spark application. In case of manual execution, commands can be referred from here.
 
