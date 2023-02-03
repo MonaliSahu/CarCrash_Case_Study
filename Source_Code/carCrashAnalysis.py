@@ -241,7 +241,7 @@ class Analyzer:
             
             output_file_path=self.output_file_path['Analysis8']
                         
-        #saving the output through save_ourtput() of utils class
+        #saving the output through save_output() of utils class
         save_output(analysis,output_file_path, self.output_file_format)
         
         #returning the output back to the function call.
