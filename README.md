@@ -1,6 +1,21 @@
 # CarCrash_Case_Study
 This case study intends to analyse the car crash data and present the findings for Vehicle Accidents across US. Below is the description of the Datasets used and the Analytics performed.
 
+**PROJECT STRUCTURE**
+
+1. sourceCodes: This package contains all the source codes required to run the spark application with the utilities package.
+    - carCrashAnalysis.py: Defines the Analyzer class
+    - utilities: Package that has all the helper and validation codes.
+      - utils.py: contains all the read & write helper functions
+      - configChecks.py: contains all config.json validation functions.
+2. Data.zip: Has sample input datasets
+3. bootstrap.bat: This file helps to run the spark application after the repo is cloned.
+4. requirements.txt: Has the list of python packages required for the application
+5. main_module.py: The driver program of the application. Takes configuration/config.json as argument
+6. configuration: This folder contains the config.json file. This is a configuration file which can be modified as per requirement in order to provide input output locations & file formats. 
+    - Format: json
+    - Keys: INPUT_FILE_PATHS (Mandatory), OUTPUT_FILE_PATHS (Optional), APP_NAME (Optional), OUTPUT_FILE_FORMAT (Optional)
+
 **DATASET**
 
 For the analysis 6 datasets are used. The Data dictionary for all the Datasets are given below. 
@@ -23,21 +38,6 @@ Application performs below analysis and store the results for each analysis.
   6.	Analysis 6: Among the crashed cars, what are the Top 5 Zip Codes with highest number crashes with alcohols as the contributing factor to a crash (Use Driver Zip Code)
   7.	Analysis 7: Count of Distinct Crash IDs where No Damaged Property was observed and Damage Level (VEH_DMAG_SCL~) is above 4 and car avails Insurance
   8.	Analysis 8: Determine the Top 5 Vehicle Makes where drivers are charged with speeding related offences, has licensed Drivers, used top 10 used vehicle colours and has car licensed with the Top 25 states with highest number of offences (to be deduced from the data)
-  
-**PROJECT STRUCTURE**
-
-1. sourceCodes: This package contains all the source codes required to run the spark application with the utilities package.
-    - carCrashAnalysis.py: Defines the Analyzer class
-    - utilities: Package that has all the helper and validation codes.
-      - utils.py: contains all the read & write helper functions
-      - configChecks.py: contains all config.json validation functions.
-2. Data.zip: Has sample input datasets
-3. bootstrap.bat: This file helps to run the spark application after the repo is cloned.
-4. requirements.txt: Has the list of python packages required for the application
-5. main_module.py: The driver program of the application. Takes configuration/config.json as argument
-6. configuration: This folder contains the config.json file. This is a configuration file which can be modified as per requirement in order to provide input output locations & file formats.
-  - Format: json
-  - Keys: INPUT_FILE_PATHS (Mandatory), OUTPUT_FILE_PATHS (Optional), APP_NAME (Optional), OUTPUT_FILE_FORMAT (Optional)
 
 **REQUIREMENTS FOR THE APPLICATION**
 
