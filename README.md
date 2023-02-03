@@ -27,6 +27,10 @@ Application performs below analysis and store the results for each analysis.
 **PROJECT STRUCTURE**
 
 1. Source_Code: This folder contains all the source codes required to run the spark application with the utilities package.
+    a. main_module.py: The driver program of the application. Takes config.json as argument.
+    b. carCrashAnalysis.py: Defines the Analyzer class
+    c. config.json: Configuration file which can be modified as per requirement in order to provide input output locations & file formats.
+    d. utilities: Package that has all the helper and validation codes.
 2. Data.zip: Has sample input datasets
 3. execution.bat: This file helps to run the spark application after the repo is cloned.
 
