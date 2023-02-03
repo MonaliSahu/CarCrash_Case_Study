@@ -12,5 +12,3 @@ cd Source_code
 ECHO "Inside Source_code"
 
 spark-submit --master local[*] main_module.py "config.json"
-
-cmd /k execution.bat
