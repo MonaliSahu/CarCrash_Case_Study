@@ -53,8 +53,10 @@ Application performs below analysis and store the results for each analysis.
 
 **EXECUTION**
 1. Clone the repository
-2. In Command prompt, go to repo location i.e., "CarCrash_Case_study folder"
-3. Type bootstrap.bat 
+2. In Command prompt / Terminal, go to repo location i.e., "CarCrash_Case_study folder"
+3. For WINDOWS: type ` bootstrap.bat `<br />
+   For LINUX: type ` nohup sh bootstrap.sh > spark.out 2> spark.err & `<br />
+               then type ` tail -f spark.out ` to check the output and similarly ` tail -f spark.err ` for checking error
 
-NOTE:- bootstrap.bat has all the commands required to run the spark application. In case of manual execution, commands can be referred from here.
+NOTE:- bootstrap.bat & bootstrap.sh has all the commands required to run the spark application. In case of manual execution, commands can be referred from here.
 
